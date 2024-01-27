@@ -1,21 +1,15 @@
 #Example1----------------------------------------------------
-x = "Python is awesome"
-print(x)
+a = "Hello, World!"
+print(a.upper())
 #Example2----------------------------------------------------
-x = "Python"
-y = "is"
-z = "awesome"
-print(x, y, z)
+a = "Hello, World!"
+print(a.lower())
 #Example3----------------------------------------------------
-x = "Python "
-y = "is "
-z = "awesome"
-print(x + y + z)
+a = " Hello, World! "
+print(a.strip()) # returns "Hello, World!"
 #Example4----------------------------------------------------
-x = 5
-y = 10
-print(x + y)
+a = "Hello, World!"
+print(a.replace("H", "J"))
 #Example5----------------------------------------------------
-x = 5
-y = "John"
-print(x, y)
+a = "Hello, World!"
+print(a.split(",")) # returns ['Hello', ' World!']

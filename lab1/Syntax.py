@@ -1,19 +1,19 @@
-#Example1
-#Python uses indentation to indicate a block of code.
+#Example1----------------------------------------------------
 if 5 > 2:
     print("Five is greater than two!")
-#Example2
-#The number of spaces is up to you as a programmer, the most common use is four, but it has to be at least one.
+#Example2----------------------------------------------------
 if 5 > 2:
  print("Five is greater than two!") 
 if 5 > 2:
         print("Five is greater than two!")  
-#Example3
-#Variables in Python:
+#Example3----------------------------------------------------
 x = 5
 y = "Hello, World!"
-#Example4
+#Example4----------------------------------------------------
 #This is a comment.
 print("Hello, World!")
-#Exercise1
+#Exercise1----------------------------------------------------
 print("Hello World!")
+#Exercise2----------------------------------------------------
+if 5 > 2:
+    print("YES")
