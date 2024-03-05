@@ -37,7 +37,7 @@ if os.path.exists(path):
 
 # Exercise 4 ----------------------------------------------------
 print("\nCounting the Number of Lines in a Text File:")
-with open(f"{directory}\\{file.txt}"" r") as file:
+with open("file.txt", "r") as file:
     lines = file.readlines()
     print("Number of lines:", len(lines))
 
