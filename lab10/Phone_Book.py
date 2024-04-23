@@ -7,7 +7,7 @@ def insert_from_csv(filename):
     cur = conn.cursor()
     with open(filename, 'r') as f:
         reader = csv.reader(f)
-        next(reader)  # Skip header
+        #next(reader)  # Skip header
         for row in reader:
             cur.execute(
                 "INSERT INTO contacts (first_name, last_name, phone_number) VALUES (%s, %s, %s)",
@@ -73,8 +73,20 @@ def delete_contact_by_phone(phone_number):
     cur.close()
     conn.close()
 
+# Function to delete all rows from the contacts table
+def delete_all_contacts():
+    conn = psycopg2.connect("dbname=phonebook user=postgres password=1234")
+    cur = conn.cursor()
+    cur.execute("DELETE FROM contacts;")
+    conn.commit()
+    cur.close()
+    conn.close()
+
 # Main function
 def main():
+    # Delete all contacts
+    #delete_all_contacts()
+
     # Insert from CSV
     insert_from_csv('contacts.csv')
 
